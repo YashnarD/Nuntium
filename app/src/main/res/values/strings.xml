@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Nuntium</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nuntium">Nuntium</string>
+    <string name="all_news_in_one_place_be_the_first_to_know_last_news">All news in one place, be the first to know last news</string>
+    <string name="desc">All news in one place, be the first to know last news</string>
+    <string name="res">Fast and reliable</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="text">Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races.
+
+For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.
+
+Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races.
+
+For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.</string>
+</resources>

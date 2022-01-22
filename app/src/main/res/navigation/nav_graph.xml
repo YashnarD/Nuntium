@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.nuntium.fragments.start.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_onboarding"
+            app:destination="@id/onboarding"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_splashScreen_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding"
+        android:name="com.example.nuntium.fragments.start.Onboarding"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboarding_to_welcomeScreen"
+            app:destination="@id/welcomeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.example.nuntium.fragments.start.WelcomeScreen"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreen_to_selectedScreen"
+            app:destination="@id/selectedScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedScreen"
+        android:name="com.example.nuntium.fragments.start.SelectedScreen"
+        android:label="fragment_selected_screen"
+        tools:layout="@layout/fragment_selected_screen" >
+        <action
+            android:id="@+id/action_selectedScreen_to_homepage"
+            app:destination="@id/homepage"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.nuntium.fragments.Homepage"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepage_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_homepage_to_articlePage"
+            app:destination="@id/articlePage" />
+        <action
+            android:id="@+id/action_homepage_to_seeAllFragment"
+            app:destination="@id/seeAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.nuntium.fragments.main.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/articlePage"
+        android:name="com.example.nuntium.fragments.main.ArticlePage"
+        android:label="fragment_article_page"
+        tools:layout="@layout/fragment_article_page" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.nuntium.fragments.main.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
+    <fragment
+        android:id="@+id/seeAllFragment"
+        android:name="com.example.nuntium.fragments.main.SeeAllFragment"
+        android:label="fragment_see_all"
+        tools:layout="@layout/fragment_see_all" >
+        <action
+            android:id="@+id/action_seeAllFragment_to_articlePage"
+            app:destination="@id/articlePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nuntium.fragments.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.nuntium.fragments.main.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/saveFragment"
+        android:name="com.example.nuntium.fragments.main.SaveFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_save" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.nuntium.fragments.main.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+</navigation>

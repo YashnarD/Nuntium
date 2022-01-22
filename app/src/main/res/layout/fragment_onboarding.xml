@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragments.start.Onboarding">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265"
+        tools:layout_editor_absoluteX="62dp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" >
+
+        <ImageView
+            android:id="@+id/select1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_select"/>
+
+        <ImageView
+            android:id="@+id/select2"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_unselected"/>
+
+        <ImageView
+            android:id="@+id/select3"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_unselected"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="24sp"
+        android:text="First to know"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_marginTop="20sp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="16sp"
+        android:textColor="#7C82A1"
+        android:text="@string/all_news_in_one_place_be_the_first_to_know_last_news"
+        android:textAlignment="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/buttonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="35dp"
+        android:elevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="#475AD7"
+        app:cardCornerRadius="20dp"
+        android:layout_width="320dp"
+        android:layout_height="56dp" >
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="Next"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

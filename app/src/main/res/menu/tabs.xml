@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/tab_categories"
+        android:icon="@drawable/ic_categoreys"
+        android:title="Categories" />
+    <item
+        android:id="@+id/tab_save"
+        android:icon="@drawable/ic_save"
+        android:title="Save" />
+    <item
+        android:id="@+id/tab_user"
+        android:icon="@drawable/ic_user"
+        android:title="User" />
+</menu>

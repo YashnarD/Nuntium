@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.start.SelectedScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Select your favorite topics"
+        android:textColor="#333647"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/poTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select some of your favorite topics to let us suggest better news for you."
+        android:textColor="#7C82A1"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/poTitle"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="450dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category1"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🏈   Sports"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category2"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🌞   Life"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category3"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🐻   Animals"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category4"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🍔   Food"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category5"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="📜   History"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category6"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="⚖️   Politics"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category7"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🎮   Gaming"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category8"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🌴   Nature"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category9"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="🎨   Art"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category10"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#F3F4F6"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#666C8E"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:text="👗   Fashion"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/buttonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="35dp"
+        android:elevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="#475AD7"
+        app:cardCornerRadius="20dp"
+        android:layout_width="320dp"
+        android:layout_height="56dp" >
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="Next"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
